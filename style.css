@@ -1,0 +1,136 @@
+
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.main{
+
+    top: -700px;
+    position: static; 
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 540px;
+    border: 1px solid black;
+    z-index: 5000;
+}
+.tetris{
+    width: 300px;
+    height: 540px;
+    display: flex;
+    flex-wrap: wrap;
+
+    opacity: 0.8;
+    z-index: 1;
+}
+.excel{
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(95, 95, 214); 
+}
+.figure{
+    width: 30px;
+    height: 30px;
+    background: rgb(4, 4, 44) ; 
+    z-index: 1000;
+}
+
+.freeze{
+    width: 30px;
+    height: 30px;
+    background: rgb(172, 22, 64) ;   
+}
+img{
+
+  width: 100%;
+    z-index: -2000;
+    opacity: 0.7;
+    height: 100vh;
+    z-index: -2000;
+}
+.container{
+    width: 100%;
+    position: fixed;
+    display: none; 
+}
+input{
+    z-index: 5000;
+    top: 0px;
+   position: absolute;
+    margin: 15px;
+    font-size: 30px;
+    padding: 15px;
+    width: 250px;
+    color: rgb(241, 241, 66);
+    background: rgb(21, 23, 124);
+}
+.controls{
+    padding: 20px;
+    position: absolute;
+    top:200px;
+    right: 200px;
+}
+
+
+ .button{
+    width: 20%;
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: blue;
+    color: white;
+    transition: 0.4s
+}
+h1{
+    color: white;
+    margin-top: 100px; 
+}
+h2 {
+    color: white;   
+}
+.modal{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background: green;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.button:hover{
+    color: black;
+    background: yellow;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
