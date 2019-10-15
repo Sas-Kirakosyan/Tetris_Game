@@ -4,7 +4,7 @@ let speed = 0;
 
 modal.addEventListener('click', function(e){
     if(e.target.classList.contains('easy')){
-        speed = 10000000;
+        speed = 900;
         
     }else if(e.target.classList.contains('normal')){
         speed = 500;
