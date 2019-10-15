@@ -4,7 +4,7 @@ let speed = 0;
 
 modal.addEventListener('click', function(e){
     if(e.target.classList.contains('easy')){
-        speed = 900;
+        speed = 10000000;
         
     }else if(e.target.classList.contains('normal')){
         speed = 500;
@@ -47,147 +47,114 @@ for(let y=18; y>0; y--){
 
 let x = 5 , y = 15;
 
-let mainArr = [
-   
-    [
-         //line
-       //x  y
-        [0, 1],
-        [0, 2],
-        [0, 3],
-        //rotate 90 deg
-        [
-            [-1, 1],
-            [0,  0],
-            [1, -1],
-            [2, -2],
-         ],
-             //rotate 180 deg
-         [
-             [1, -1],
-             [0,  0],
-             [-1, 1],
-             [-2, 2],
-         ],
-             //rotate 270 deg
-        [
-            [-1, 1],
-            [0,  0],
-            [1, -1],
-            [2, -2],
-        ],
-             //rotate 360 deg
-         [
-             [1, -1],
-             [0,  0],
-             [-1, 1],
-             [-2, 2],
-         ],
-
-    ],
-       [   
-        //  kubik
-           [1, 0],
-           [0, 1],
-           [1, 1],
-
-                   //rotate 90 deg
-        [
-            [0, 0],
-            [0, 0],
-            [0, 0],
-            [0, 0],
-        ],
-             //rotate 180 deg
-         [
-            [0, 0],
-            [0, 0],
-            [0, 0],
-            [0, 0],
-         ],
-             //rotate 270 deg
-        [
-            [0, 0],
-            [0, 0],
-            [0, 0],
-            [0, 0],
-        ],
-             //rotate 360 deg
-         [
-            [0, 0],
-            [0, 0],
-            [0, 0],
-            [0, 0],
-         ]
-
-       ], 
-         [   //letter- L
-            [1, 0],
+let mainArr = [            
+     [ //line
+           //x  y
             [0, 1],
-            [0, 2], 
-            
-                   //rotate 90 deg
-        [
-            [0,  0],
-            [-1, 1],
-            [1,  0],
-            [2, -1],
+            [0, 2],
+            [0, 3],
+            //rotate 90 deg
+            [
+                [-1, 1],
+                [0,  0],
+                [1, -1],
+                [2, -2],
+             ],
+                 //rotate 180 deg
+             [
+                 [1, -1],
+                 [0,  0],
+                 [-1, 1],
+                 [-2, 2],
+             ],
+                 //rotate 270 deg
+            [
+                [-1, 1],
+                [0,  0],
+                [1, -1],
+                [2, -2],
+            ],
+                 //rotate 360 deg
+             [
+                 [1, -1],
+                 [0,  0],
+                 [-1, 1],
+                 [-2, 2],
+             ],
+    
         ],
-             //rotate 180 deg
-         [
-            [1, -1],
-            [1, -1],
-            [-1, 0],
-            [-1,  0],
-         ],
-             //rotate 270 deg
-        [
-            [-1, 0],
-            [0, -1],
-            [2, -2],
-            [1, -1],
-        ],
-             //rotate 360 deg
-         [
-            [0, -1],
-            [0, -1],
-            [-2, 0],
-            [-2, 0],
-         ]
-],//done
-         [   //letter- L opposite
-            [1, 0],
-            [1, 1],
-            [1, 2], 
-             //rotate 90 deg
-         [
-            [0,  0],
-            [0,  0],
-            [1, -1],
-            [-1, -1],
-         ],     //r tate 180 deg
-         [
-            [0 -1],
-            [-1, 0],
-            [-2, 1],
-            [1,  0],,
-         ],
-             //rotate 270 deg
-        [
-            [2, 0],
-            [0, 0],
-            [1, -1],
-            [1, -1],
-        ],
-             //rotate 360 deg
-         [
-            [-2, 0],
-            [1, -1],
-            [0, 0],
-            [-1, 1],
-           ]//done stil this point
-         ],
-         [  // z rigth
+          [   
+            //  kubik
+               [1, 0],
+               [0, 1],
+               [1, 1],
+    
+                       //rotate 90 deg
+            [
+                [0, 0],
+                [0, 0],
+                [0, 0],
+                [0, 0],
+            ],
+                 //rotate 180 deg
+             [
+                [0, 0],
+                [0, 0],
+                [0, 0],
+                [0, 0],
+             ],
+                 //rotate 270 deg
+            [
+                [0, 0],
+                [0, 0],
+                [0, 0],
+                [0, 0],
+            ],
+                 //rotate 360 deg
+             [
+                [0, 0],
+                [0, 0],
+                [0, 0],
+                [0, 0],
+             ],
+    
+           ], 
+             [   //letter- L
+                [1, 0],
+                [0, 1],
+                [0, 2], 
+                
+                       //rotate 90 deg
+            [
+                [0,  0],
+                [-1, 1],
+                [1,  0],
+                [2, -1],
+            ],
+                 //rotate 180 deg
+             [
+                [1, -1],
+                [1, -1],
+                [-1, 0],
+                [-1, 0],
+             ],
+                 //rotate 270 deg
+            [
+                [-1, 0],
+                [0, -1],
+                [2, -2],
+                [1, -1],
+            ],
+                 //rotate 360 deg
+             [
+                [0, -1],
+                [0, -1],
+                [-2, 0],
+                [-2, 0],
+             ],
+    ],//done 2pak verjum mek bac skzbum
+   
+     [  // z rigth
             [1, 0],
             [-1, 1],
             [0,  1],
@@ -216,75 +183,46 @@ let mainArr = [
                 [0, 0],
                 [1, -1],
                 [-2, 0],
-                [-1, 1],
-             ]//done stil this point
-         ],
-         [  // z left
-            [1, 0],
-            [1, 1],
-            [2, 1],
-
-            [  //r tate 90 deg
-                [2, -1],
-                [0, 0],
-                [1, -1],
-                [-1,  0],
-            ],     //r tate 180 deg
-            [
+                [-1, -1],
+         ], 
+    ],//done stil this point
+            
+             [  // lego
+                [1, 0],
                 [2, 0],
-                [0, -1],
-                [-1, 0],
-                [1, -1],
+                [1, 1],
+                [  //r0tate 90 deg
+                    [1,-1],
+                    [0, 0],
+                    [0, 0],
+                    [0, 0],
+                ],   //r tate 180 deg
+               [
+                    [0, 0],
+                    [-1, 0],
+                    [-1, 0],
+                    [1, -1],
+                 ],
+                     //rotate 270 deg
+                [
+                    [1, -1],
+                    [1, -1],
+                    [1, -1],
+                    [0, 0],
+                ],
+                     //rotate 360 deg
+                 [
+                    [-2, 0],
+                    [0, -1],
+                    [0, -1],
+                    [-1, -1],
+                 ],//done stil this point
              ],
-                 //rotate 270 deg
-            [
-                [2, -1],
-                [0, 0],
-                [1, -1],
-                [-1, 0],
-            ],
-                 //rotate 360 deg
-             [
-                [-2, 0],
-                [0, -1],
-                [-1, 0],
-                [1, -1],
-             ]//done stil this point
-         ],
-         [  // lego
-            [1, 0],
-            [2, 0],
-            [1, 1],
-            [  //r tate 90 deg
-                [1, -1],
-                [0, 0],
-                [0, 0],
-                [0,  0],
-            ],   //r tate 180 deg
-             [
-                [0, 0],
-                [-1, 0],
-                [-1, 0],
-                [1, -1],
-             ],
-                 //rotate 270 deg
-            [
-                [1, -1],
-                [1, -1],
-                [1, -1],
-                [0, 0],
-            ],
-                 //rotate 360 deg
-             [
-                [-2, 0],
-                [0, -1],
-                [0, -1],
-                [-1, 1],
-             ]//done stil this point
-         ],
 ]
-  let currentFigure = 0;
-let figureBody = [];
+// console.log(mainArr[1][1][1]);
+
+  let randomFigure = 0;
+let figureBody = 0;
 let rotate = -1;
 
 function create(){
@@ -305,10 +243,9 @@ function create(){
         
         figureBody[i].classList.add('figure');
     }
-
 }
-
 create();
+
 
 //  create counter score
 let score = 0;
@@ -389,25 +326,24 @@ function move(){
         create();
     }
 }
-
-
-//move()
 let int = setInterval(()=>{
     move()
 }, speed);
 
+
+
 //   move to right and lefth
-
-
 window.addEventListener('keydown', function(e){
+    let checkMoveRigthLeft =true;
+   
     let cordinates1 =[figureBody[0].getAttribute('posX'), figureBody[0].getAttribute('posY')];
     let cordinates2 =[figureBody[1].getAttribute('posX'), figureBody[1].getAttribute('posY')];
     let cordinates3 =[figureBody[2].getAttribute('posX'), figureBody[2].getAttribute('posY')];
     let cordinates4 =[figureBody[3].getAttribute('posX'), figureBody[3].getAttribute('posY')];
     //console.log(cordinates4)
     function getMoveRigthLeft(a){
-    
-        let checkMoveRigthLeft =true;
+        
+        
         let figureNew =[
            
             document.querySelector(`[posX="${+cordinates1[0] + a }"][posY="${cordinates1[1]}"] `),
@@ -415,7 +351,7 @@ window.addEventListener('keydown', function(e){
             document.querySelector(`[posX="${+cordinates3[0] + a }"][posY="${cordinates3[1]}"] `),
             document.querySelector(`[posX="${+cordinates4[0] + a }"][posY="${cordinates4[1]}"] `),
         ];
-       
+
         
         for(let i=0; i < figureNew.length; i++){
           
@@ -441,43 +377,42 @@ window.addEventListener('keydown', function(e){
         getMoveRigthLeft(1);
        
     }else if(e.keyCode == 40){
-        move();
+       move();
         //  rotate
     }else if(e.keyCode == 38){
 
 
-let   figureNew =[
-            document.querySelector(`[posX="${+cordinates1[0] + mainArr[currentFigure][rotate+2][0][0]}"]
-            [posY="${+cordinates1[1]+mainArr[currentFigure][rotate+2][0][1]}"]`),
-            document.querySelector(`[posX="${+cordinates2[0] + mainArr[currentFigure][rotate+2][1][0] }"]
-            [posY="${+cordinates2[1]+mainArr[currentFigure][rotate+2][1][1]}"] `),
-            document.querySelector(`[posX="${+cordinates3[0] + mainArr[currentFigure][rotate+2][2][0] }"]
-            [posY="${+cordinates3[1]+mainArr[currentFigure][rotate+2][2][1]}"] `),
-            document.querySelector(`[posX="${+cordinates4[0] + mainArr[currentFigure][rotate+2][3][0] }"]
-            [posY="${+cordinates4[1]+mainArr[currentFigure][rotate+2][3][1]}"] `),
+
+ let   figureNew =[
+document.querySelector(`[posX="${+cordinates1[0] + mainArr[randomFigure][rotate+2][0][0]}"][posY="${+cordinates1[1]+mainArr[randomFigure][rotate+2][0][1]}"]`),
+document.querySelector(`[posX="${+cordinates2[0] + mainArr[randomFigure][rotate+2][1][0] }"][posY="${+cordinates2[1]+mainArr[randomFigure][rotate+2][1][1]}"] `),
+document.querySelector(`[posX="${+cordinates3[0] + mainArr[randomFigure][rotate+2][2][0] }"][posY="${+cordinates3[1]+mainArr[randomFigure][rotate+2][2][1]}"] `),
+document.querySelector(`[posX="${+cordinates4[0] + mainArr[randomFigure][rotate+2][3][0] }"][posY="${+cordinates4[1]+mainArr[randomFigure][rotate+2][3][1]}"] `),
         ];
-      //Dav jan figuureNew array@ null a chanachum.  u figurner@ chi frracnum ; 
+       
+
+  
+ 
     for(let i=0; i < figureNew.length; i++){
-          
+      
             if(!figureNew[i]  ||  figureNew[i].classList.contains('freeze')){
           checkMoveRigthLeft = false;
             }
         }
-        if(checkMoveRigthLeft){
+        if(checkMoveRigthLeft === true){
             for(let i=0; i < figureBody.length; i++){
                 figureBody[i].classList.remove('figure');
     }
-   
-        figureBody = figureNew;
+         figureBody = figureNew;
 
         for(let i=0; i < figureBody.length; i++){
             figureBody[i].classList.add('figure');
        }
-       if(rotate <4){
+       if(rotate < 4){
            rotate++;
        }else{
            rotate = 1;
-       }
+       }console.log(rotate)
     }
 }
 })
