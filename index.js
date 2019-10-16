@@ -218,8 +218,76 @@ let mainArr = [
                     [-1, -1],
                  ],//done stil this point
              ],
+             
+
+
+           // /add figure
+         [  // z rigth
+            [1, 0],
+            [-1, 1],
+            [0,  1],
+
+            [  //r tate 90 deg
+                [0, -1],
+                [-1, 0],
+                [2, -1],
+                [1,  0],
+            ],   //r tate 180 deg
+            [
+                [0, 0],
+                [1, -1],
+                [-2, 0],
+                [-1, -1],
+             ],
+                 //rotate 270 deg
+            [
+                [0, -1],
+                [-1, 0],
+                [2, -1],
+                [1, 0],
+            ],
+                 //rotate 360 deg
+             [
+                [0, 0],
+                [1, -1],
+                [-2, 0],
+                [-1, -1],
+             ]//done stil this point
+         ],
+            [   //letter- L opposite
+            [1, 0],
+            [1, 1],
+            [1, 2], 
+             //rotate 90 deg
+         [
+            [1,  1],
+            [0,  0],
+            [1, -1],
+            [2, -2],
+         ],     //r tate 180 deg
+         [
+            [1, -1],
+            [0,   0],
+            [-1, -1],
+            [-2, -2],
+         ],
+             //rotate 270 deg
+        [
+            [-1,-1],
+            [0,  0],
+            [-1, 1],
+            [-2, 2],
+        ],
+             //rotate 360 deg
+         [
+            [-1, 1],
+            [0,  0],
+            [1,  1],
+            [2,  2],
+           ],//done stil this point
+         ],
+ 
 ]
-// console.log(mainArr[1][1][1]);
 
   let randomFigure = 0;
 let figureBody = 0;
